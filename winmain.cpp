@@ -136,7 +136,7 @@ int main(){
         else if (!gspace_isactived[y][x]){
             gspace_isactived[y][x] = true;
             moves++;
-            /*free zone*/ //не работает
+            /*free zone*/
             for (int o = 0; o < 100; o++){
                 for (int i = 0; i < 10; i++){
                     for (int j = 0; j < 10; j++){
