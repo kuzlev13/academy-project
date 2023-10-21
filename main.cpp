@@ -205,7 +205,10 @@ int main()
         cin >> x >> y;
         if (gspace[y][x] == 9)
         {
+            clock_t endt = clock();
             cout << "YOU ARE LOSE ;(" << endl;
+            cout << "Moves: " << moves << endl;
+            cout << "time: " << (double)(endt - startt) / CLOCKS_PER_SEC << endl;
             break;
         }
         else if (!gspace_isactived[y][x])
