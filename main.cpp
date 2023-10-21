@@ -185,11 +185,6 @@ int main()
     /*user actions part*/
     int moves = 0;
     clock_t startt = clock();
-    Person winner1loc = winner1.json;
-    Person winner2loc = winner2.json;
-    Person winner3loc = winner3.json;
-    Person winner4loc = winner4.json;
-    Person winner5loc = winner5.json;
     while (true)
     {
         system("reset");
@@ -220,8 +215,6 @@ int main()
             cout << "You are win;)" << endl;
             cout << "Moves: " << moves << endl;
             cout << "time: " << (double)(endt - startt) / CLOCKS_PER_SEC << endl;
-            winner.time = (double)(endt - startt) / CLOCKS_PER_SEC;
-            getline(cin, winner.name);
             break;
         }
         cout << "input right down(e.g. 3 5)" << endl
